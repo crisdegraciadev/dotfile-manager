@@ -8,7 +8,7 @@
     {
       "name": "weztern",
       "source": "./configs/wezterm",
-      "destination": "$HOME/.config/weztern"
+      "destination": "$HOME/.config/wezterm"
     },
     {
       "name": "starship",
