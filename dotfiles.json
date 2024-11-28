@@ -1,0 +1,19 @@
+{
+  "dotfiles": [
+    {
+      "name": "nvim",
+      "source": "./configs/nvim",
+      "destination": "$HOME/.config/nvim"
+    },
+    {
+      "name": "weztern",
+      "source": "./configs/wezterm",
+      "destination": "$HOME/.config/weztern"
+    },
+    {
+      "name": "starship",
+      "source": "./configs/starship.toml",
+      "destination": "$HOME/.config/starship.toml"
+    }
+  ]
+}
