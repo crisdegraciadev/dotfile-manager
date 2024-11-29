@@ -59,6 +59,19 @@ return {
         },
       })
 
+      lspconfig.tailwindcss.setup({
+        capabilities = capabilities,
+
+        root_dir = util.root_pattern("tailwind.config.js", "assets/tailwind.config.js"),
+        init_options = {
+          userLanguages = {
+            elixir = "html-eex",
+            eelixir = "html-eex",
+            heex = "html-eex",
+          },
+        },
+      })
+
       lspconfig.eslint.setup({
         capabilities = capabilities,
         nodePath = "/Users/kairosds/.nvm/versions/node/v14.21.3/bin/node"
@@ -80,6 +93,7 @@ return {
 
       lspconfig.html.setup({
         capabilities = capabilities,
+        filetypes = { "html", "heex" }
       })
 
       lspconfig.cssls.setup({
@@ -104,7 +118,7 @@ return {
 
       lspconfig.emmet_ls.setup({
         capabilities = capabilities,
-        filetypes = { "html", "css", "sass", "javascript" },
+        filetypes = { "html", "css", "sass", "javascript", "heex" },
       })
 
       lspconfig.angularls.setup({
