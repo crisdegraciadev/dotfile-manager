@@ -14,6 +14,11 @@
       "name": "starship",
       "source": "./configs/starship.toml",
       "destination": "$HOME/.config/starship.toml"
+    },
+    {
+      "name": "oh-my-posh",
+      "source": "./configs/oh-my-posh.omp.json",
+      "destination": "$HOME/.config/oh-my-posh.omp.json"
     }
   ]
 }
